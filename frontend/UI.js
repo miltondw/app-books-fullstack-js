@@ -14,10 +14,10 @@ class UI {
       div.innerHTML = `
       <div class="card m-2">
         <div class="row no-gutters">
-            <div class="col-md-4 col-sm-12">
+            <div class="col-xs-12 col-sm-6 col-md-6">
                 <img src="${book.imagePath}" class="img-fluid" alt="${book.title}">
             </div>
-            <div class="col-md-8 col-sm-12">
+            <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="card-block px-2">
                     <h4 class="card-title">${book.title}</h4>
                     <p class="card-text">${book.author}</p>
