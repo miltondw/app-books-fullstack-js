@@ -28,11 +28,11 @@ document.getElementById("book-form").addEventListener("submit", function (e) {
 
   // Validating User Input
   if (title === "" || author === "" || isbn === "") {
-    ui.renderMessage("Please fill all the fields", "error", 3000);
+    ui.renderMessage("Please fill all the fields", "error", 2000);
   } else {
     // Pass the new book to the UI
     ui.addANewBook(formData);
-    ui.renderMessage("New Book Added Successfully", "success", 2000);
+    ui.renderMessage("New Book Added Successfully", "success", 1000);
   }
 
   e.preventDefault();
@@ -41,7 +41,7 @@ document.getElementById("book-form").addEventListener("submit", function (e) {
 document.getElementById("books-cards").addEventListener("click", (e) => {
   if (e.target.classList.contains("delete")) {
     ui.deleteBook(e.target.getAttribute("_id"));
-    ui.renderMessage("Book Deleted Successfully", "success", 3000);
+    ui.renderMessage("Book Deleted Successfully", "success", 2000);
   }
   e.preventDefault();
 });
