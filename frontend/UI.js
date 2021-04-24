@@ -55,9 +55,9 @@ class UI {
     // Adding Text to the div
     div.appendChild(document.createTextNode(message));
     // Puting in the documnet
-    const container = document.querySelector(".col-md-4");
-    const bookForm = document.querySelector("#book-form");
-    container.insertBefore(div, bookForm);
+    const bookContainer = document.getElementById("book-container");
+    const bookForm = document.getElementById("book-form");
+    bookContainer.insertBefore(div, bookForm);
     // Removing the div after some secconds
     setTimeout(() => {
       document.querySelector(".message").remove();
